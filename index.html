@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mexiko – Kostümkonzepte für die Erw. Showtanzgruppe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Karla:ital,wght@0,400;0,600;0,800;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF1DD; --paper:#FFFBF2; --ink:#2B1610;
+    --chili:#C8362B; --marigold:#F2A007; --turquoise:#127E86;
+    --magenta:#CE2E73; --leaf:#2E8B57; --indigo:#2C3E73; --sand:#b8893d;
+    --shadow:rgba(43,22,16,.16);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Karla',sans-serif;color:var(--ink);
+    background:
+      radial-gradient(circle at 12% 8%, rgba(242,160,7,.12), transparent 40%),
+      radial-gradient(circle at 88% 22%, rgba(18,126,134,.12), transparent 42%),
+      var(--cream);
+    line-height:1.6;overflow-x:hidden;
+  }
+  .bunting{display:flex;justify-content:center;flex-wrap:wrap;gap:0;padding-top:14px}
+  .flag{width:62px;height:78px;margin:0 -1px;position:relative;animation:sway 4s ease-in-out infinite;transform-origin:top center}
+  .flag:nth-child(odd){animation-delay:.4s}
+  .flag svg{display:block;width:100%;height:100%;filter:drop-shadow(0 4px 4px var(--shadow))}
+  @keyframes sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+  header{text-align:center;padding:18px 22px 36px;max-width:920px;margin:0 auto}
+  .kicker{font-family:'Karla';font-weight:800;letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;color:var(--turquoise);margin-bottom:14px}
+  h1{font-family:'Rye',serif;font-weight:400;font-size:clamp(2.6rem,8vw,5rem);line-height:.96;color:var(--chili);text-shadow:3px 3px 0 var(--marigold);margin-bottom:18px}
+  .lead{font-size:1.08rem;max-width:680px;margin:0 auto;color:#5a3a2c}
+  .reqs{max-width:880px;margin:30px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;padding:0 22px}
+  .req{background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:16px 18px;box-shadow:5px 5px 0 var(--ink);text-align:left}
+  .req b{font-family:'Yeseva One';font-weight:400;display:block;font-size:1.05rem;margin-bottom:3px}
+  .req.r1 b{color:var(--chili)} .req.r2 b{color:var(--turquoise)} .req.r3 b{color:var(--magenta)}
+  .req small{font-size:.92rem;color:#5a3a2c;line-height:1.45;display:block}
+  .quality{max-width:880px;margin:22px auto 0;padding:0 22px}
+  .qbanner{background:var(--leaf);color:#fff;border:2px solid var(--ink);border-radius:16px;padding:18px 22px;box-shadow:5px 5px 0 var(--ink)}
+  .qbanner b{font-family:'Yeseva One';font-weight:400;font-size:1.18rem;display:block;margin-bottom:5px;color:#fff}
+  .qbanner span{font-size:.97rem;color:#eafff2}
+  main{max-width:920px;margin:0 auto;padding:30px 22px 60px}
+  .card{background:var(--paper);border:2px solid var(--ink);border-radius:20px;box-shadow:8px 8px 0 var(--ink);margin-bottom:46px;overflow:hidden;position:relative}
+  .card-top{padding:26px 30px 8px;position:relative}
+  .num{font-family:'Rye';font-size:3.4rem;line-height:1;opacity:.16;position:absolute;top:14px;right:24px}
+  .tag{display:inline-block;font-family:'Karla';font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:#fff;padding:5px 12px;border-radius:30px;margin-bottom:10px}
+  .card h2{font-family:'Yeseva One';font-weight:400;font-size:clamp(1.7rem,4.5vw,2.4rem);line-height:1.05;margin-bottom:6px}
+  .subtitle{font-style:italic;color:#6a4636;font-size:1rem;margin-bottom:4px}
+  .stripe{height:9px;width:100%;display:flex}
+  .stripe span{flex:1}
+  .body{padding:20px 30px 26px}
+  .figwrap{border:2px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:5px 5px 0 var(--ink);margin-bottom:18px}
+  .figwrap svg{display:block;width:100%;height:auto}
+  .row{display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed #d8c4a4;align-items:flex-start}
+  .row:last-of-type{border-bottom:none}
+  .ico{flex:none;width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:2px solid var(--ink)}
+  .label{font-family:'Karla';font-weight:800;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8a6a52;margin-bottom:1px}
+  .row p{font-size:1rem}
+  .tip{margin-top:16px;background:#FFF4D6;border-left:6px solid var(--marigold);padding:13px 16px;border-radius:0 12px 12px 0;font-size:.96rem}
+  .tip b{color:#9a6c00}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .links a{text-decoration:none;font-family:'Karla';font-weight:800;font-size:.85rem;padding:9px 16px;border-radius:30px;border:2px solid var(--ink);color:var(--ink);background:#fff;transition:transform .12s ease, box-shadow .12s ease;display:inline-flex;align-items:center;gap:7px;box-shadow:3px 3px 0 var(--ink)}
+  .links a:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
+  .links a .dot{width:10px;height:10px;border-radius:50%}
+  .c1 .tag{background:var(--chili)} .c1 h2{color:var(--chili)} .c1 .ico{background:#fde3df;color:var(--chili)}
+  .c2 .tag{background:var(--indigo)} .c2 h2{color:var(--indigo)} .c2 .ico{background:#e0e4f2;color:var(--indigo)}
+  .c3 .tag{background:var(--leaf)} .c3 h2{color:var(--leaf)} .c3 .ico{background:#dcefe4;color:var(--leaf)}
+  .c4 .tag{background:var(--magenta)} .c4 h2{color:var(--magenta)} .c4 .ico{background:#fbe0ed;color:var(--magenta)}
+  .c5 .tag{background:var(--turquoise)} .c5 h2{color:var(--turquoise)} .c5 .ico{background:#d6eef0;color:var(--turquoise)}
+  .c6 .tag{background:var(--sand)} .c6 h2{color:#9a6c00} .c6 .ico{background:#f3e6cb;color:#9a6c00}
+  /* price block */
+  .prices{margin-top:18px;border:2px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:4px 4px 0 var(--ink)}
+  .prices .ph{padding:9px 14px;font-family:'Karla';font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;color:#fff}
+  .prices table{width:100%;border-collapse:collapse;font-size:.9rem;background:#fff}
+  .prices td{padding:9px 12px;border-bottom:1px dashed #d8c4a4;vertical-align:top}
+  .prices td.p{text-align:right;white-space:nowrap;font-weight:800;color:var(--ink)}
+  .prices .pi{font-weight:700;color:var(--ink)}
+  .prices .pi small{display:block;font-weight:400;color:#8a6a52;font-size:.82rem}
+  .prices .ps{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
+  .prices .ps a{font-size:.68rem;font-weight:700;text-decoration:none;color:var(--ink);background:var(--cream);padding:2px 8px;border-radius:16px;transition:background .12s}
+  .prices .ps a:hover{background:var(--marigold)}
+  .prices tr.diy td{background:#FFF8E6}
+  .prices tr.diy .pi::before{content:"\2702  ";color:var(--magenta)}
+  .prices tr.tot td{border-bottom:none;border-top:2px solid var(--ink);font-family:'Rye';font-size:1.05rem;padding-top:13px}
+  .prices tr.tot td.p{color:var(--chili)}
+  .basics{background:var(--paper);border:3px dashed var(--turquoise);border-radius:20px;padding:28px 30px;margin-bottom:46px;box-shadow:8px 8px 0 rgba(18,126,134,.25)}
+  .basics .tag{display:inline-block;font-family:'Karla';font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:#fff;background:var(--turquoise);padding:5px 12px;border-radius:30px;margin-bottom:10px}
+  .basics h2{font-family:'Yeseva One';font-weight:400;color:var(--turquoise);font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:8px}
+  .qty{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+  .qbox{border:2px solid var(--ink);border-radius:14px;padding:16px 18px;background:#fff;box-shadow:4px 4px 0 var(--ink)}
+  .qbox .big{font-family:'Rye';font-size:2rem;line-height:1;color:var(--chili)}
+  .qbox .what{font-family:'Karla';font-weight:800;margin-top:4px}
+  .qbox small{display:block;color:#6a4636;font-size:.9rem;margin-top:3px}
+  .shop{background:var(--ink);color:var(--cream);border-radius:20px;padding:30px 26px;margin-bottom:46px;box-shadow:8px 8px 0 var(--marigold)}
+  .shop .tag{display:inline-block;font-family:'Karla';font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--ink);background:var(--marigold);padding:5px 12px;border-radius:30px;margin-bottom:10px}
+  .shop h2{font-family:'Yeseva One';font-weight:400;color:var(--marigold);font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:6px}
+  .shop p.intro{color:#f3e6cf;max-width:660px}
+  .tbl{width:100%;border-collapse:collapse;margin-top:20px;font-size:.94rem}
+  .tbl th{text-align:left;font-family:'Karla';font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.66rem;color:var(--marigold);padding:8px 8px;border-bottom:2px solid rgba(242,160,7,.5)}
+  .tbl th.r,.tbl td.r{text-align:right;white-space:nowrap}
+  .tbl td{padding:11px 8px;border-bottom:1px solid rgba(251,241,221,.13);vertical-align:top}
+  .tbl .item{font-family:'Karla';font-weight:800;color:#fff}
+  .budget-note{margin-top:20px;background:rgba(46,139,87,.18);border:2px solid var(--leaf);border-radius:14px;padding:16px 18px;color:#dff0e6;font-size:.95rem}
+  .budget-note b{color:#9be3b6}
+  .closer{background:var(--ink);color:var(--cream);border-radius:20px;padding:34px 30px;margin-top:10px;box-shadow:8px 8px 0 var(--chili)}
+  .closer h2{font-family:'Yeseva One';font-weight:400;color:var(--marigold);font-size:1.7rem;margin-bottom:8px}
+  .closer ul{list-style:none;margin-top:14px}
+  .closer li{padding:8px 0 8px 30px;position:relative;border-bottom:1px solid rgba(251,241,221,.14)}
+  .closer li:last-child{border-bottom:none}
+  .closer li::before{content:"\2726";position:absolute;left:0;color:var(--marigold)}
+  .bonus-flag{position:absolute;top:18px;right:26px;font-family:'Rye';font-size:1rem;color:var(--turquoise);transform:rotate(8deg)}
+  footer{text-align:center;padding:34px 22px 50px;color:#8a6a52;font-size:.88rem}
+  footer .fr{font-family:'Rye';color:var(--chili);font-size:1.3rem;margin-bottom:6px}
+  @media(max-width:560px){.flag{width:46px;height:58px}.num{font-size:2.4rem}.card-top,.body{padding-left:20px;padding-right:20px}.shop{padding:24px 18px}}
+</style>
+</head>
+<body>
+
+<div class="bunting" aria-hidden="true">
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#C8362B"/><circle cx="30" cy="20" r="9" fill="#FBF1DD"/><circle cx="15" cy="38" r="4" fill="#FBF1DD"/><circle cx="45" cy="38" r="4" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#F2A007"/><rect x="22" y="14" width="16" height="16" fill="#FBF1DD" transform="rotate(45 30 22)"/><circle cx="30" cy="42" r="4" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#127E86"/><circle cx="30" cy="22" r="9" fill="#FBF1DD"/><circle cx="30" cy="22" r="4" fill="#127E86"/><circle cx="18" cy="40" r="3" fill="#FBF1DD"/><circle cx="42" cy="40" r="3" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#CE2E73"/><path d="M30 12 L36 24 L30 30 L24 24 Z" fill="#FBF1DD"/><circle cx="30" cy="44" r="4" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#2E8B57"/><circle cx="30" cy="20" r="9" fill="#FBF1DD"/><rect x="26" y="34" width="8" height="8" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#2C3E73"/><circle cx="30" cy="22" r="9" fill="#FBF1DD"/><circle cx="15" cy="38" r="4" fill="#FBF1DD"/><circle cx="45" cy="38" r="4" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#C8362B"/><rect x="22" y="14" width="16" height="16" fill="#FBF1DD" transform="rotate(45 30 22)"/><circle cx="30" cy="42" r="4" fill="#FBF1DD"/></svg></div>
+  <div class="flag"><svg viewBox="0 0 60 78"><path d="M0 0 H60 V52 L30 78 L0 52 Z" fill="#F2A007"/><circle cx="30" cy="22" r="9" fill="#FBF1DD"/><circle cx="30" cy="22" r="4" fill="#F2A007"/></svg></div>
+</div>
+
+<header>
+  <div class="kicker">Faschingsverein Mangfalltal</div>
+  <h1>&iexcl;Viva M&eacute;xico!</h1>
+  <p class="lead">F&uuml;nf Kost&uuml;mkonzepte f&uuml;r die M&auml;nner der FVM-Showtanzgruppe</p>
+</header>
+
+<div class="quality">
+  <div class="qbanner">
+    <b>Hochwertige Einzelteile statt einem Fertigkost&uuml;m</b>
+    <span>Wir kombinieren einzelne Kleidungsst&uuml;cke (Hemd, Hose, Jacke, Weste). <br> Akzente wie Glitzer, Pailletten und Zierborten n&auml;hen wir selbst auf &ndash; das h&auml;lt besser, ist g&uuml;nstig und l&auml;sst sich exakt auf die Gruppe abstimmen.</span>
+  </div>
+</div>
+
+<main>
+
+  <!-- 1 MARIACHI -->
+  <article class="card c1">
+    <div class="card-top">
+      <div class="num">01</div>
+      <span class="tag">Der Klassiker</span>
+      <h2>Mariachi / Charro</h2>
+      <p class="subtitle">El traje de charro &ndash; das ikonischste Mexiko-Bild</p>
+    </div>
+    <div class="stripe"><span style="background:var(--chili)"></span><span style="background:var(--marigold)"></span><span style="background:#fff"></span><span style="background:var(--ink)"></span></div>
+    <div class="body">
+        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+        <img 
+            src="mariachi_schwarz.jpg" 
+            style="width:45%; height:auto;" 
+            alt="Image 1">
+        <img 
+            src="mariachi_blau.jpg" 
+            style="width:45%; height:auto;" 
+            alt="Image 2">
+        </div>
+      <div class="row"><div class="ico">&#128084;</div><div><div class="label">Oberteil</div><p>Kurze Bolero-/Kurzjacke (Chaquetilla) aus festem Stoff &ndash; endet an der Taille, darunter eine passende Weste inkl. wei&szlig;em Hemd mit kleiner Schleife/Fliege (mo&ntilde;o). <br> Gold- bzw. Silberzier wird selbst aufgen&auml;ht.</p></div></div>
+      <div class="row"><div class="ico">&#128086;</div><div><div class="label">Unterteil</div><p>Schwarze Slimfit-Anzughose. Die Zierknopfreihe / der Seitenstreifen (Botonadura) kommt als aufgen&auml;hte Borte oder Pailletten-Linie dazu.</p></div></div>
+      <div class="row"><div class="ico">&#129336;</div><div><div class="label">Accessoires</div><p>Stoff-Sombrero (f&uuml;r Auf- und Ausmarsch wird er aufgesetzt), Fliege/mo&ntilde;o, kurze Stiefeletten oder Schwarze flache Lederschuhe.</p></div></div>
+      <div class="links">
+        <a href="https://www.google.com/search?tbm=isch&q=mariachi+charro+anzug+herren" target="_blank" rel="noopener"><span class="dot" style="background:var(--chili)"></span>Google</a>
+        <a href="https://www.pinterest.de/search/pins/?q=charro%20suit%20men" target="_blank" rel="noopener"><span class="dot" style="background:var(--marigold)"></span>Pinterest</a>
+      </div>
+      <div class="prices">
+        <div class="ph" style="background:var(--chili)">Einzelteile &middot; pro Person</div>
+        <table>
+
+        <tr><td>
+        <span class="pi">Schwarzer oder Dunkelblauer Bolero</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href="https://www.temu.com/de/herren-stilvolles-asymmetrisches-saum-crop---langarm-doppelreihig-weit--outdoor-einfach-freizeit-crop-jacke-g-606433961736838.html?top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9baf0ab015e64dac81f1dab05e39e1ed-goods.jpeg&spec_id=16072&spec_gallery_id=335520&sku_id=88456730563725&share_token=a72qKekj0UCSjnnB9dCzQAEAa6EzsQrrC91ElnXMP1LOdk5kK2o26sugY6_SwkoZNDpADeG9D52ZDNfYc-h9FJffYXQYj8G89sJUI37WvbAv9C71tJpOmnnUkbRIOCqmizB3HpUm6GY63igPNrq4bT&_x_vst_scene=adg&_x_ads_sub_channel=shopping&_x_ns_prz_type=-1&_x_ns_sku_id=88456730543245&_x_ns_gid=606433961736838&_x_ads_channel=google&_x_gmc_account=5583898174&_x_login_type=Google&_x_ns_gg_lnk_type=adr&_x_ads_account=1564722882&_x_ads_set=23622659466&_x_ads_id=194684156580&_x_ads_creative_id=799288395526&_x_ns_source=g&_x_ns_gclid=Cj0KCQjwz9_QBhD_ARIsADnSCfCBTARW3Sr43pALpPlxmUfxahTfqZ2HuiKTdlvWkBLOX4LG-IJOPlYaAgHlEALw_wcB&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=5583898174-en-88456730543245&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=Cj8KCQjwrNrQBhC0ARIuAKGoKFVH8YTynU44Dh4ILNfBX8BaMh-pAz4eXOyNg1khFSOzQDtNBBFYUVJ-mhoClRk&_x_ns_gbraid=0AAAAAo4mICFKYoUHOXS21XlD5ampKZmVJ&_x_ns_targetid=pla-2468825797649&refer_page_name=kuiper&refer_page_id=13554_1779958918920_hzkgr36426&refer_page_sn=13554&_x_sessn_id=f9qqzcudfz" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="bolero_schwarz.png" style="width:200px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            temu
+            </a>
+            <a href="https://www.temu.com/de/kein-halskette--herren--einfarbiger-stehkragen-langarm-einreihig-outdoor-street-work-formelle-freizeit-crop-jacke-ohne-halskette-g-606009162584651.html?top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F08ad81816d3844dab6fb0ed06243b40d-goods.jpeg&spec_id=3002&spec_gallery_id=347768&spec_ids=3002%2C16086&sku_id=100583436478146&share_token=a72qKekj0UCSjnnB9dCzQkLX5O692a_a05DvU36W-pDlhyGjUC57TRyV7Q6QBHVd1Ihuz9TB32zuaYmR5gW6c9WIJj8z1tR5n-in41Y-ZQJeq5b4O7OTtDEHiHJkJWGaHjn3yPjH93zpLYSXnzYsmo&_x_vst_scene=adg&_x_ads_sub_channel=shopping&_x_ns_prz_type=-1&_x_ns_sku_id=100583436478146&_x_ns_gid=606009162584651&_x_ads_channel=google&_x_gmc_account=5583898174&_x_login_type=Google&_x_ns_gg_lnk_type=adr&_x_ads_account=1564722882&_x_ads_set=22839035502&_x_ads_id=182816552763&_x_ads_creative_id=766641678163&_x_ns_source=g&_x_ns_gclid=Cj0KCQjwz9_QBhD_ARIsADnSCfAdqs7elYdK1TFmsXjoSp0zFHjDE9WpcZbKNLQ1zqUj-gJx755G61kaArxUEALw_wcB&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=5583898174-100583436478146&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=Cj8KCQjwrNrQBhC0ARIuAKGoKFVZtbjdbNUdO68Bp0DDFRmKxXalpKejZJMmBEvn5DeczmXeVhJkcdY2QxoCiOI&_x_ns_gbraid=0AAAAAo4mICE-VwA9JTR1yvYinfZfiClI-&_x_ns_targetid=pla-2434712444320&refer_page_name=kuiper&refer_page_id=13554_1779962185869_srqlcihfx8&refer_page_sn=13554&_x_sessn_id=ie2w5hy92p&is_back=1" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="bolero_schwarz2.png" style="width:200px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Temu Produktbild">
+            temu
+            </a>
+            <a href="https://de.shein.com/ark/11655?goods_id=465055988&test=5051&url_from=adhub866439133&scene=1&pf=google&ad_type=DPA&language=de&siteuid=de&version_bid=102311026,102310816,102353676,102310681,102310806&version_eid=100902896&landing_page_id=11655&ad_test_id=50060&requestId=olw-5qx9kn4jpct7&cid=22689103670&gad_source=1&network=g&gad_campaignid=22689103670&adid=759069072430&tv_b=2&activity_id=5051&currency=EUR&lang=de&skucode=I8mnsqjgs5gzsl&product_set_id=2812&onelink=0/googlefeed_de&gclid=Cj0KCQjwz9_QBhD_ARIsADnSCfB58eZ6tmZycRVf2mvPlPyPZiUq4RIusgg1nDd0KeenMv61uQsvMkoaAt6vEALw_wcB&ismg=09ba32e2b92ff502c7ffd356a0ea8bbd7db49e5426d2bba36806211dcd6cb4e7_01_1779876235&geoid=9041646&setid=185042092270&kwd=pla-2435646727186" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="bolero_blau.jpg" style="width:200px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Blauer Bolero">
+            shein
+            </a>
+        </div>
+        </td><td class="p">~20-60 &euro;</td></tr>
+
+        <tr><td>
+        <span class="pi">Schwarze Weste</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href=" https://www.amazon.de/Generic-gilet-weste/dp/B0D4JWDPQK/ref=asc_df_B0D4JWDPQK?mcid=1a042aabbe553039b6a815c791e3a348&th=1&tag=googshopde-21&linkCode=df0&hvadid=720630303790&hvpos=&hvnetw=g&hvrand=9134777605309843022&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9041646&hvtargid=pla-2400248675665&hvocijid=9134777605309843022-B0D4JWDPQK-&hvexpln=0&psc=1" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="weste_schwarz.png" style="width:200px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            amazon
+            </a>
+        </div>
+        </td><td class="p">~15 &euro;</td></tr>
+       
+
+        <tr><td>
+        <span class="pi">Wei&szlig;es Hemd</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href="https://www2.hm.com/de_de/productpage.1242812001.html" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="hemd_weiss.png" style="width:200px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            h&amp;m
+            </a>
+        </div>
+        </td><td class="p">~20 &euro;</td></tr>
+
+        <tr><td>
+        <span class="pi">Elastische Tanzhose oder Anzughose</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href="hhttps://www.amazon.de/Runhomal-Tanzhose-Trainingshose-Wettbewerb-Tanzkleidung/dp/B0F4XLTJZ5/ref=asc_df_B0F4XLTJZ5?mcid=d640e26a65163387bfe8a6717d38a30a&th=1&tag=googshopde-21&linkCode=df0&hvadid=768883948003&hvpos=&hvnetw=g&hvrand=18221817121592131079&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9041639&hvtargid=pla-2439912294911&hvocijid=18221817121592131079-B0F4XLTJZ5-&hvexpln=0&psc=1" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="tanzhose_schwarz.png" style="width:150px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            h&amp;m
+            </a>
+        </div>
+        </td><td class="p">~20-25 &euro;</td></tr>
+        
+        <tr><td>
+        <span class="pi">Fliege (mo&ntilde;o)</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href="https://www.etsy.com/de/listing/291222933/mexikanische-charro-mono-sencillo-fliege?ls=r&external=1&rec_type=cs&ref=pla_similar_listing_top-5&pro=1&sts=1&content_source=a73246e369b5f3f15af857181167723e%253ALT4fd4574bf7229368a541728e13fbfe323d240ca2&logging_key=a73246e369b5f3f15af857181167723e%3ALT4fd4574bf7229368a541728e13fbfe323d240ca2" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="fliege.png" style="width:150px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            etsyz
+         </a>
+        </div>
+        </td><td class="p">~20-25 &euro;</td></tr>
+
+        <tr><td>
+        <span class="pi">Sombrero</span>
+        <div class="ps" style="display:flex; gap:12px; align-items:flex-end; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+            <a href="https://www.kostuempalast.de/Sombrero-Hut-schwarz.html" target="_blank" rel="noopener" style="display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none;">
+            <img src="sombrero.png" style="width:150px; height:auto; border-radius:6px; border:1px solid #d8c4a4;" alt="Schwarzer Bolero">
+            kostuempalast
+         </a>
+        </div>
+        </td><td class="p">~15 &euro;</td></tr>
+        
+        <tr><td><span class="pi">Hautfarbenes V-Unterhemd <small>Schwei&szlig;schutz &middot; 2 St&uuml;ck</small></span>
+        </td><td class="p">~16 &euro;</td></tr>
+        <tr class="p"><td><span class="pi">Silber/Goldborte + Pailletten</span>
+        </td><td class="p">~2-5 &euro;</td></tr>
+
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- 2 DIA DE LOS MUERTOS -->
+  <article class="card c2">
+    <div class="card-top">
+      <div class="num">02</div>
+      <span class="tag">Elegant &amp; plakativ</span>
+      <h2>D&iacute;a de los Muertos / Catr&iacute;n</h2>
+      <p class="subtitle">Der edle Totengr&auml;ber-Look</p>
+    </div>
+    <div class="stripe"><span style="background:var(--indigo)"></span><span style="background:var(--ink)"></span><span style="background:var(--magenta)"></span><span style="background:var(--marigold)"></span></div>
+    <div class="body">
+      <div class="figwrap"><svg viewBox="0 0 400 240" role="img" aria-label="Illustration Dia de los Muertos / Catrin">
+        <rect width="400" height="240" fill="#e7e9f3"/>
+        <circle cx="42" cy="44" r="6" fill="#CE2E73"/><circle cx="358" cy="48" r="6" fill="#F2A007"/><circle cx="52" cy="200" r="5" fill="#2C3E73"/><circle cx="350" cy="196" r="5" fill="#CE2E73"/>
+        <rect x="178" y="156" width="18" height="66" rx="4" fill="#1a1a1a"/><rect x="204" y="156" width="18" height="66" rx="4" fill="#1a1a1a"/>
+        <g stroke="#fff" stroke-width="2.4"><line x1="187" y1="168" x2="187" y2="216"/><line x1="213" y1="168" x2="213" y2="216"/><line x1="181" y1="178" x2="193" y2="178"/><line x1="181" y1="196" x2="193" y2="196"/><line x1="207" y1="178" x2="219" y2="178"/><line x1="207" y1="196" x2="219" y2="196"/></g>
+        <rect x="172" y="220" width="26" height="10" rx="4" fill="#000"/><rect x="202" y="220" width="26" height="10" rx="4" fill="#000"/>
+        <rect x="138" y="98" width="16" height="58" rx="8" fill="#1a1a1a"/><rect x="246" y="98" width="16" height="58" rx="8" fill="#1a1a1a"/>
+        <path d="M150 96 Q200 82 250 96 L246 158 L154 158 Z" fill="#1a1a1a"/>
+        <g stroke="#fff" stroke-width="2.6" fill="none"><line x1="200" y1="100" x2="200" y2="152"/><path d="M200 110 q-16 6 -30 2"/><path d="M200 110 q16 6 30 2"/><path d="M200 122 q-16 6 -28 2"/><path d="M200 122 q16 6 28 2"/><path d="M200 134 q-13 6 -24 2"/><path d="M200 134 q13 6 24 2"/></g>
+        <rect x="192" y="84" width="16" height="14" fill="#f2f2f2"/>
+        <circle cx="200" cy="70" r="22" fill="#f6f6f6"/>
+        <circle cx="191" cy="68" r="6" fill="#1a1a1a"/><circle cx="209" cy="68" r="6" fill="#1a1a1a"/>
+        <path d="M200 74 l-4 7 h8 z" fill="#1a1a1a"/>
+        <g stroke="#1a1a1a" stroke-width="1.6"><line x1="190" y1="86" x2="210" y2="86"/><line x1="194" y1="83" x2="194" y2="89"/><line x1="200" y1="83" x2="200" y2="89"/><line x1="206" y1="83" x2="206" y2="89"/></g>
+        <circle cx="200" cy="60" r="3" fill="#CE2E73"/>
+        <rect x="180" y="22" width="40" height="26" rx="2" fill="#161616"/><rect x="170" y="46" width="60" height="7" rx="3" fill="#161616"/>
+        <circle cx="186" cy="30" r="5" fill="#F2A007"/><circle cx="186" cy="30" r="2" fill="#C8362B"/>
+      </svg></div>
+      <div class="row"><div class="ico">&#128128;</div><div><div class="label">Oberteil</div><p>Schwarzes, k&ouml;rpernahes Hemd (Baumwoll-Stretch). Die wei&szlig;en Rippen/Knochen werden als Filz-Applikation oder mit Stoffmalfarbe selbst aufgebracht &ndash; h&auml;lt besser als ein fertiger Skelett-Aufdruck.</p></div></div>
+      <div class="row"><div class="ico">&#128086;</div><div><div class="label">Unterteil</div><p>Schwarze Slim-Hose, mit Knochen-Linien an den Beinen (DIY).</p></div></div>
+      <div class="row"><div class="ico">&#127913;</div><div><div class="label">Accessoires</div><p>Zylinder mit Stoffblumen, Calavera-Schminke (schwei&szlig;- und abriebfest).</p></div></div>
+      <div class="tip"><b>Heber-Tipp:</b> Schminke vor der ersten Hebung testen &ndash; sie darf bei Schwei&szlig; nicht auf den Tanzpartner abf&auml;rben. Filz-Knochen flach aufn&auml;hen, damit nichts dr&uuml;ckt.</div>
+      <div class="links">
+        <a href="https://www.google.com/search?tbm=isch&q=dia+de+los+muertos+catrin+anzug+herren" target="_blank" rel="noopener"><span class="dot" style="background:var(--indigo)"></span>Echte Fotos &middot; Google</a>
+        <a href="https://www.pinterest.de/search/pins/?q=catrin%20costume%20men" target="_blank" rel="noopener"><span class="dot" style="background:var(--magenta)"></span>Pinterest</a>
+      </div>
+      <div class="prices">
+        <div class="ph" style="background:var(--indigo)">Hochwertige Einzelteile &middot; pro Person</div>
+        <table>
+          <tr><td><span class="pi">Schwarzes Hemd <small>Baumwoll-Stretch</small></span><div class="ps"><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hemden" target="_blank" rel="noopener">C&amp;A</a><a href="https://www.otto.de/suche/schwarzes-hemd-herren/" target="_blank" rel="noopener">OTTO</a></div></td><td class="p">~22 &euro;</td></tr>
+          <tr><td><span class="pi">Schwarze Slim-Hose</span><div class="ps"><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hosen" target="_blank" rel="noopener">C&amp;A</a><a href="https://www2.hm.com/de_de/herren/produkte/hosen.html" target="_blank" rel="noopener">H&amp;M</a></div></td><td class="p">~28 &euro;</td></tr>
+          <tr><td><span class="pi">Zylinder</span><div class="ps"><a href="https://www.otto.de/suche/zylinder-hut/" target="_blank" rel="noopener">OTTO</a><a href="https://www.ebay.de/sch/i.html?_nkw=zylinder+hut+herren" target="_blank" rel="noopener">eBay</a></div></td><td class="p">~12 &euro;</td></tr>
+          <tr><td><span class="pi">Sugar-Skull-Schminkset <small>schwei&szlig;fest</small></span><div class="ps"><a href="https://www.ebay.de/sch/i.html?_nkw=sugar+skull+schminke+set" target="_blank" rel="noopener">eBay</a><a href="https://www.amazon.de/s?k=sugar+skull+schminke+set" target="_blank" rel="noopener">Amazon</a></div></td><td class="p">~8 &euro;</td></tr>
+          <tr><td><span class="pi">Hautfarbenes V-Unterhemd <small>Schwei&szlig;schutz &middot; 2 St&uuml;ck</small></span><div class="ps"><a href="https://www.otto.de/herren/mode/waesche/unterhemden/?ausschnitt-kragen=v-ausschnitt" target="_blank" rel="noopener">OTTO</a><a href="https://www.hermko.de/hermko-64880-herren-business-funktionsshirt-mit-v-neck/a-64880" target="_blank" rel="noopener">HERMKO</a></div></td><td class="p">~16 &euro;</td></tr>
+          <tr class="diy"><td><span class="pi">Knochen-DIY <small>wei&szlig;er Filz / Stoffmalfarbe + Pailletten</small></span><div class="ps"><a href="https://www.amazon.de/s?k=stoffmalfarbe+weiss" target="_blank" rel="noopener">Amazon</a><a href="https://www.ebay.de/sch/i.html?_nkw=bastelfilz+weiss" target="_blank" rel="noopener">eBay</a></div></td><td class="p">~10 &euro;</td></tr>
+          <tr class="tot"><td>Variante 02 gesamt</td><td class="p">&asymp; 96 &euro;</td></tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- 3 REVOLUTIONAER -->
+  <article class="card c3">
+    <div class="card-top">
+      <div class="num">03</div>
+      <span class="tag">Markant &amp; kraftvoll</span>
+      <h2>Revolution&auml;r / Bandito</h2>
+      <p class="subtitle">Pancho-Villa-Stil &ndash; gut f&uuml;r eine kr&auml;ftige Choreo</p>
+    </div>
+    <div class="stripe"><span style="background:var(--leaf)"></span><span style="background:#fff"></span><span style="background:var(--chili)"></span><span style="background:#c9a36a"></span></div>
+    <div class="body">
+      <div class="figwrap"><svg viewBox="0 0 400 240" role="img" aria-label="Illustration mexikanischer Revolutionaer">
+        <rect width="400" height="240" fill="#ddefe4"/>
+        <circle cx="42" cy="44" r="6" fill="#C8362B"/><circle cx="358" cy="50" r="6" fill="#F2A007"/><circle cx="52" cy="202" r="5" fill="#2E8B57"/><circle cx="350" cy="196" r="5" fill="#c9a36a"/>
+        <rect x="178" y="156" width="18" height="66" rx="4" fill="#cdb487"/><rect x="204" y="156" width="18" height="66" rx="4" fill="#cdb487"/>
+        <rect x="170" y="220" width="28" height="11" rx="4" fill="#6b4a25"/><rect x="202" y="220" width="28" height="11" rx="4" fill="#6b4a25"/>
+        <rect x="138" y="98" width="16" height="58" rx="8" fill="#f3ead4"/><rect x="246" y="98" width="16" height="58" rx="8" fill="#f3ead4"/>
+        <path d="M150 96 Q200 84 250 96 L248 158 L152 158 Z" fill="#f3ead4"/>
+        <path d="M168 92 L196 100 L182 158 L160 150 Z" fill="#7a5230"/><path d="M232 92 L204 100 L218 158 L240 150 Z" fill="#7a5230"/>
+        <path d="M150 100 L256 140 L252 152 L146 112 Z" fill="#8a5a2c"/>
+        <g fill="#3a2410"><circle cx="162" cy="110" r="3.4"/><circle cx="180" cy="117" r="3.4"/><circle cx="198" cy="124" r="3.4"/><circle cx="216" cy="131" r="3.4"/><circle cx="234" cy="138" r="3.4"/></g>
+        <rect x="192" y="84" width="16" height="14" fill="#E9B68C"/>
+        <circle cx="200" cy="70" r="22" fill="#E9B68C"/>
+        <path d="M183 78 q17 12 34 0 q-9 9 -17 9 q-8 0 -17 -9" fill="#3a2410"/>
+        <ellipse cx="200" cy="44" rx="92" ry="17" fill="#caa15a"/><ellipse cx="200" cy="42" rx="92" ry="14" fill="#d9b574"/>
+        <ellipse cx="200" cy="30" rx="28" ry="18" fill="#caa15a"/><ellipse cx="200" cy="42" rx="32" ry="8" fill="#b78d44"/>
+        <path d="M168 42 q32 12 64 0" stroke="#2E8B57" stroke-width="3" fill="none"/>
+      </svg></div>
+      <div class="row"><div class="ico">&#128085;</div><div><div class="label">Oberteil</div><p>Helles Hemd (creme/beige) aus Baumwolle, dar&uuml;ber eine schmale Weste. Die Bandolera n&auml;hen wir aus festem Gurtband mit Filz-&bdquo;Patronen&ldquo; selbst &ndash; weich und ungef&auml;hrlich beim Heben.</p></div></div>
+      <div class="row"><div class="ico">&#128086;</div><div><div class="label">Unterteil</div><p>Helle/beige Slim-Hose mit G&uuml;rtel.</p></div></div>
+      <div class="row"><div class="ico">&#127797;</div><div><div class="label">Accessoires</div><p>Gro&szlig;er Sombrero, aufgeklebter Schnauzbart, Halstuch.</p></div></div>
+      <div class="tip"><b>Heber-Tipp:</b> Die Bandolera als weiche Attrappe ohne harte Teile fertigen und flach am K&ouml;rper fixieren &ndash; sonst st&ouml;rt sie beim Greifen.</div>
+      <div class="links">
+        <a href="https://www.google.com/search?tbm=isch&q=mexikanischer+revolution%C3%A4r+bandolera+kost%C3%BCm" target="_blank" rel="noopener"><span class="dot" style="background:var(--leaf)"></span>Echte Fotos &middot; Google</a>
+        <a href="https://www.pinterest.de/search/pins/?q=mexican%20revolutionary%20costume%20men" target="_blank" rel="noopener"><span class="dot" style="background:var(--chili)"></span>Pinterest</a>
+      </div>
+      <div class="prices">
+        <div class="ph" style="background:var(--leaf)">Hochwertige Einzelteile &middot; pro Person</div>
+        <table>
+          <tr><td><span class="pi">Helles Hemd (creme) <small>Baumwolle</small></span><div class="ps"><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hemden" target="_blank" rel="noopener">C&amp;A</a><a href="https://www.otto.de/suche/leinenhemd-herren/" target="_blank" rel="noopener">OTTO</a></div></td><td class="p">~20 &euro;</td></tr>
+          <tr><td><span class="pi">Anzugweste</span><div class="ps"><a href="https://www.otto.de/suche/herren-anzugweste/" target="_blank" rel="noopener">OTTO</a><a href="https://www.zalando.de/herrenbekleidung/?q=weste%20anzug" target="_blank" rel="noopener">Zalando</a></div></td><td class="p">~30 &euro;</td></tr>
+          <tr><td><span class="pi">Beige Slim-Hose / Chino</span><div class="ps"><a href="https://www.otto.de/herren/mode/hosen/chinohosen/?farbe=beige" target="_blank" rel="noopener">OTTO</a><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hosen-chinos" target="_blank" rel="noopener">C&amp;A</a></div></td><td class="p">~28 &euro;</td></tr>
+          <tr><td><span class="pi">Sombrero + Schnauzbart</span><div class="ps"><a href="https://www.karneval-megastore.de/r-2894-accessoires-und-zubehoer/r-3101-mexicaner/r-3092-huete.html" target="_blank" rel="noopener">Karneval-Megastore</a><a href="https://www.ebay.de/sch/i.html?_nkw=schnauzbart+selbstklebend" target="_blank" rel="noopener">eBay</a></div></td><td class="p">~12 &euro;</td></tr>
+          <tr><td><span class="pi">Hautfarbenes V-Unterhemd <small>Schwei&szlig;schutz &middot; 2 St&uuml;ck</small></span><div class="ps"><a href="https://www.otto.de/herren/mode/waesche/unterhemden/?ausschnitt-kragen=v-ausschnitt" target="_blank" rel="noopener">OTTO</a><a href="https://www.hermko.de/hermko-64880-herren-business-funktionsshirt-mit-v-neck/a-64880" target="_blank" rel="noopener">HERMKO</a></div></td><td class="p">~16 &euro;</td></tr>
+          <tr class="diy"><td><span class="pi">Bandolera selbst n&auml;hen <small>Gurtband + Filz-Patronen</small></span><div class="ps"><a href="https://www.ebay.de/sch/i.html?_nkw=gurtband+breit+meterware" target="_blank" rel="noopener">eBay</a><a href="https://www.amazon.de/s?k=gurtband+breit" target="_blank" rel="noopener">Amazon</a></div></td><td class="p">~8 &euro;</td></tr>
+          <tr class="tot"><td>Variante 03 gesamt</td><td class="p">&asymp; 114 &euro;</td></tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- 4 SERAPE -->
+  <article class="card c4">
+    <div class="card-top">
+      <div class="num">04</div>
+      <span class="tag">Farbexplosion</span>
+      <h2>Serape / Poncho-Look</h2>
+      <p class="subtitle">Echte gewebte Decke &ndash; mit Sicherheits-Kniff</p>
+    </div>
+    <div class="stripe"><span style="background:var(--magenta)"></span><span style="background:var(--marigold)"></span><span style="background:var(--turquoise)"></span><span style="background:var(--leaf)"></span><span style="background:var(--chili)"></span></div>
+    <div class="body">
+      <div class="figwrap"><svg viewBox="0 0 400 240" role="img" aria-label="Illustration Serape / Poncho">
+        <rect width="400" height="240" fill="#fbe1ed"/>
+        <circle cx="42" cy="44" r="6" fill="#127E86"/><circle cx="358" cy="50" r="6" fill="#F2A007"/><circle cx="52" cy="202" r="5" fill="#CE2E73"/><circle cx="350" cy="196" r="5" fill="#2E8B57"/>
+        <rect x="178" y="158" width="18" height="64" rx="4" fill="#f4f4f4"/><rect x="204" y="158" width="18" height="64" rx="4" fill="#f4f4f4"/>
+        <rect x="172" y="220" width="26" height="10" rx="4" fill="#7a5230"/><rect x="202" y="220" width="26" height="10" rx="4" fill="#7a5230"/>
+        <rect x="176" y="150" width="48" height="12" rx="3" fill="#caa15a"/>
+        <rect x="138" y="100" width="16" height="56" rx="8" fill="#E9B68C"/><rect x="246" y="100" width="16" height="56" rx="8" fill="#E9B68C"/>
+        <g>
+          <path d="M150 96 Q200 86 250 96 L256 110 L144 110 Z" fill="#C8362B"/>
+          <rect x="146" y="110" width="108" height="8" fill="#F2A007"/>
+          <rect x="146" y="118" width="108" height="8" fill="#127E86"/>
+          <rect x="146" y="126" width="108" height="8" fill="#2E8B57"/>
+          <rect x="146" y="134" width="108" height="8" fill="#CE2E73"/>
+          <rect x="146" y="142" width="108" height="6" fill="#F2A007"/>
+          <g stroke="#fff" stroke-width="1.2" opacity=".6"><line x1="146" y1="114" x2="254" y2="114"/><line x1="146" y1="130" x2="254" y2="130"/></g>
+        </g>
+        <g stroke="#7a5230" stroke-width="2"><line x1="150" y1="148" x2="150" y2="156"/><line x1="170" y1="148" x2="170" y2="156"/><line x1="190" y1="148" x2="190" y2="156"/><line x1="210" y1="148" x2="210" y2="156"/><line x1="230" y1="148" x2="230" y2="156"/><line x1="250" y1="148" x2="250" y2="156"/></g>
+        <rect x="192" y="86" width="16" height="14" fill="#E9B68C"/>
+        <circle cx="200" cy="72" r="22" fill="#E9B68C"/>
+        <path d="M188 78 q12 7 24 0" stroke="#5a3a22" stroke-width="3" fill="none"/>
+        <ellipse cx="200" cy="48" rx="74" ry="15" fill="#caa15a"/><ellipse cx="200" cy="46" rx="74" ry="12" fill="#d9b574"/>
+        <ellipse cx="200" cy="36" rx="25" ry="15" fill="#caa15a"/>
+        <path d="M174 46 q26 10 52 0" stroke="#CE2E73" stroke-width="3" fill="none"/>
+      </svg></div>
+      <div class="row"><div class="ico">&#129507;</div><div><div class="label">Oberteil</div><p>Echte gewebte Serape (Mexiko-Decke) statt d&uuml;nner Faschings-Poncho &ndash; als <b>kurzes, fest vern&auml;htes Schulter-Cape</b>, das vor der Hebung abgenommen werden kann. Darunter wei&szlig;es Shirt.</p></div></div>
+      <div class="row"><div class="ico">&#128086;</div><div><div class="label">Unterteil</div><p>Wei&szlig;e Slim-Hose &ndash; l&auml;sst die Serape-Farben leuchten.</p></div></div>
+      <div class="row"><div class="ico">&#129413;</div><div><div class="label">Accessoires</div><p>Gewebter G&uuml;rtel, schmaler Sombrero oder farbiges Stirnband.</p></div></div>
+      <div class="tip"><b>Heber-Tipp:</b> Aus der gro&szlig;en Decke ein kurzes, abnehmbares Cape n&auml;hen (kein langer Poncho) &ndash; Fiesta-Farben ohne Flatter- und Verfangungsrisiko.</div>
+      <div class="links">
+        <a href="https://www.google.com/search?tbm=isch&q=mexican+serape+outfit+men" target="_blank" rel="noopener"><span class="dot" style="background:var(--magenta)"></span>Echte Fotos &middot; Google</a>
+        <a href="https://www.pinterest.de/search/pins/?q=serape%20outfit%20men" target="_blank" rel="noopener"><span class="dot" style="background:var(--turquoise)"></span>Pinterest</a>
+      </div>
+      <div class="prices">
+        <div class="ph" style="background:var(--magenta)">Hochwertige Einzelteile &middot; pro Person</div>
+        <table>
+          <tr><td><span class="pi">Echte gewebte Serape <small>Mexiko-Decke, als Cape vern&auml;ht</small></span><div class="ps"><a href="https://www.superskull.de/mexikanische-decke/" target="_blank" rel="noopener">Superskull</a><a href="https://www.icolori.eu/mexikanische-decken.htm" target="_blank" rel="noopener">Icolori</a><a href="https://www.etsy.com/de/search?q=mexican+serape+blanket" target="_blank" rel="noopener">Etsy</a></div></td><td class="p">~28 &euro;</td></tr>
+          <tr><td><span class="pi">Wei&szlig;e Slim-Hose</span><div class="ps"><a href="https://www.otto.de/suche/weisse-hose-herren/" target="_blank" rel="noopener">OTTO</a><a href="https://www2.hm.com/de_de/herren/produkte/hosen.html" target="_blank" rel="noopener">H&amp;M</a></div></td><td class="p">~28 &euro;</td></tr>
+          <tr><td><span class="pi">Gewebter G&uuml;rtel + Sombrero/Stirnband</span><div class="ps"><a href="https://www.karneval-megastore.de/r-2894-accessoires-und-zubehoer/r-3101-mexicaner/r-3092-huete.html" target="_blank" rel="noopener">Karneval-Megastore</a><a href="https://www.etsy.com/de/search?q=mexican+woven+belt" target="_blank" rel="noopener">Etsy</a></div></td><td class="p">~10 &euro;</td></tr>
+          <tr><td><span class="pi">Hautfarbenes V-Unterhemd <small>Schwei&szlig;schutz &middot; 2 St&uuml;ck</small></span><div class="ps"><a href="https://www.otto.de/herren/mode/waesche/unterhemden/?ausschnitt-kragen=v-ausschnitt" target="_blank" rel="noopener">OTTO</a><a href="https://www.hermko.de/hermko-64880-herren-business-funktionsshirt-mit-v-neck/a-64880" target="_blank" rel="noopener">HERMKO</a></div></td><td class="p">~16 &euro;</td></tr>
+          <tr class="diy"><td><span class="pi">Pailletten-/Borten-Akzente <small>zum Aufn&auml;hen</small></span><div class="ps"><a href="https://www.ebay.de/sch/i.html?_nkw=pailletten+borte+meterware" target="_blank" rel="noopener">eBay</a><a href="https://www.amazon.de/s?k=pailletten+borte+meterware" target="_blank" rel="noopener">Amazon</a></div></td><td class="p">~8 &euro;</td></tr>
+          <tr class="tot"><td>Variante 04 gesamt</td><td class="p">&asymp; 90 &euro;</td></tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- 5 CREME CHINO -->
+  <article class="card c6">
+    <div class="card-top">
+      <div class="num">05</div>
+      <span class="tag">Leger &amp; hebetauglich</span>
+      <h2>Creme-Chino &amp; mexikanische Hemden</h2>
+      <p class="subtitle">Eine Hose &ndash; frei kombinierbare Muster-Hemden</p>
+    </div>
+    <div class="stripe"><span style="background:#e8d4a8"></span><span style="background:var(--turquoise)"></span><span style="background:var(--chili)"></span><span style="background:var(--marigold)"></span></div>
+    <div class="body">
+      <div class="figwrap"><svg viewBox="0 0 400 240" role="img" aria-label="Illustration Creme-Chino mit Guayabera">
+        <rect width="400" height="240" fill="#f4e8cf"/>
+        <circle cx="42" cy="44" r="6" fill="#127E86"/><circle cx="358" cy="50" r="6" fill="#C8362B"/><circle cx="52" cy="202" r="5" fill="#F2A007"/><circle cx="350" cy="196" r="5" fill="#2E8B57"/>
+        <rect x="178" y="156" width="18" height="66" rx="4" fill="#ead9b4"/><rect x="204" y="156" width="18" height="66" rx="4" fill="#ead9b4"/>
+        <rect x="172" y="220" width="26" height="10" rx="4" fill="#7a5230"/><rect x="202" y="220" width="26" height="10" rx="4" fill="#7a5230"/>
+        <rect x="176" y="150" width="48" height="11" rx="3" fill="#b9904a"/>
+        <rect x="138" y="98" width="16" height="60" rx="8" fill="#fbf6ea"/><rect x="246" y="98" width="16" height="60" rx="8" fill="#fbf6ea"/>
+        <path d="M150 96 Q200 84 250 96 L250 158 L150 158 Z" fill="#fbf6ea"/>
+        <g stroke="#e3d4ac" stroke-width="2"><line x1="184" y1="98" x2="184" y2="156"/><line x1="216" y1="98" x2="216" y2="156"/></g>
+        <g fill="#d8c79b"><circle cx="200" cy="108" r="2"/><circle cx="200" cy="120" r="2"/><circle cx="200" cy="132" r="2"/><circle cx="200" cy="144" r="2"/></g>
+        <g><circle cx="172" cy="112" r="3" fill="#CE2E73"/><circle cx="172" cy="112" r="1.2" fill="#F2A007"/><circle cx="228" cy="112" r="3" fill="#127E86"/><circle cx="228" cy="112" r="1.2" fill="#F2A007"/><circle cx="176" cy="124" r="2.4" fill="#2E8B57"/><circle cx="224" cy="124" r="2.4" fill="#C8362B"/></g>
+        <rect x="192" y="84" width="16" height="14" fill="#E9B68C"/>
+        <circle cx="200" cy="70" r="22" fill="#E9B68C"/>
+        <ellipse cx="200" cy="48" rx="58" ry="12" fill="#d9b574"/><ellipse cx="200" cy="48" rx="58" ry="9" fill="#e3c485"/>
+        <ellipse cx="200" cy="40" rx="24" ry="13" fill="#d9b574"/><ellipse cx="200" cy="48" rx="27" ry="6" fill="#c39a4f"/>
+        <path d="M176 48 q24 8 48 0" stroke="#127E86" stroke-width="2.6" fill="none"/>
+      </svg></div>
+      <div class="row"><div class="ico">&#128086;</div><div><div class="label">Unterteil</div><p>Creme-Chino mit etwas Stretch, schmaler bis gerader Schnitt. Naht an Schritt und Ges&auml;&szlig; verst&auml;rken lassen.</p></div></div>
+      <div class="row"><div class="ico">&#128085;</div><div><div class="label">Oberteil &ndash; Auswahl</div><p>Guayabera (Biesen-Front), bestickte Camisa bordada, Aztec-/Serape-Print oder schlichtes wei&szlig;es Hemd &ndash; gerne in der Gruppe gemischt. Glitzer-/Pailletten-Akzente selbst aufn&auml;hen.</p></div></div>
+      <div class="row"><div class="ico">&#127930;</div><div><div class="label">Accessoires</div><p>Geflochtener G&uuml;rtel, Strohhut/schmaler Sombrero, Halstuch in Akzentfarbe.</p></div></div>
+      <div class="tip"><b>Heber-Tipp:</b> Hemd zum Heben in die Chino stecken oder hinten fixieren. Auf festen, nicht zu glatten Stoff achten &ndash; glatte Hemden geben den Hebern wenig Halt.</div>
+      <div class="links">
+        <a href="https://www.google.com/search?tbm=isch&q=guayabera+hemd+herren+creme" target="_blank" rel="noopener"><span class="dot" style="background:var(--sand)"></span>Guayabera &middot; Google</a>
+        <a href="https://www.google.com/search?tbm=isch&q=mexikanisches+hemd+bestickt+herren" target="_blank" rel="noopener"><span class="dot" style="background:var(--chili)"></span>Bestickte Hemden</a>
+        <a href="https://www.pinterest.de/search/pins/?q=mexican%20embroidered%20shirt%20men" target="_blank" rel="noopener"><span class="dot" style="background:var(--turquoise)"></span>Pinterest</a>
+      </div>
+      <div class="prices">
+        <div class="ph" style="background:var(--sand)">Hochwertige Einzelteile &middot; pro Person</div>
+        <table>
+          <tr><td><span class="pi">Creme-Chino (mit Stretch)</span><div class="ps"><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hosen-chinos" target="_blank" rel="noopener">C&amp;A</a><a href="https://www2.hm.com/de_de/herren/produkte/hosen.html" target="_blank" rel="noopener">H&amp;M</a><a href="https://www.otto.de/herren/mode/hosen/chinohosen/?farbe=beige" target="_blank" rel="noopener">OTTO</a></div></td><td class="p">~28 &euro;</td></tr>
+          <tr><td><span class="pi">Mexikanisches Muster-Hemd <small>Guayabera o. bestickt, Leinen/Baumwolle</small></span><div class="ps"><a href="https://www.ebay.de/sch/i.html?_nkw=guayabera+hemd+herren" target="_blank" rel="noopener">eBay</a><a href="https://www.etsy.com/de/search?q=mexican+embroidered+shirt+men" target="_blank" rel="noopener">Etsy</a><a href="https://de.novica.com/p/handgefertigtes-guayabera-hemd-fur-herren/359281/" target="_blank" rel="noopener">Novica</a></div></td><td class="p">~30 &euro;</td></tr>
+          <tr><td><span class="pi">Wei&szlig;es Hemd <small>2 St&uuml;ck</small></span><div class="ps"><a href="https://www.c-and-a.com/de/de/shop/herren-bekleidung-hemden" target="_blank" rel="noopener">C&amp;A</a><a href="https://www.otto.de/suche/weisses-hemd-herren/" target="_blank" rel="noopener">OTTO</a></div></td><td class="p">~22 &euro;</td></tr>
+          <tr><td><span class="pi">Hautfarbenes V-Unterhemd <small>Schwei&szlig;schutz &middot; 2 St&uuml;ck</small></span><div class="ps"><a href="https://www.otto.de/herren/mode/waesche/unterhemden/?ausschnitt-kragen=v-ausschnitt" target="_blank" rel="noopener">OTTO</a><a href="https://finn-design.de/products/herren-unterhemd-kurzarm-v-ausschnitt" target="_blank" rel="noopener">FINN</a><a href="https://www.hermko.de/hermko-64880-herren-business-funktionsshirt-mit-v-neck/a-64880" target="_blank" rel="noopener">HERMKO</a></div></td><td class="p">~16 &euro;</td></tr>
+          <tr><td><span class="pi">Sombrero</span><div class="ps"><a href="https://www.karneval-megastore.de/r-2894-accessoires-und-zubehoer/r-3101-mexicaner/r-3092-huete.html" target="_blank" rel="noopener">Karneval-Megastore</a><a href="https://www.deiters.de/p/sombrero/0055417" target="_blank" rel="noopener">Deiters</a></div></td><td class="p">~10 &euro;</td></tr>
+          <tr class="diy"><td><span class="pi">Glitzer-/Pailletten-Akzente <small>zum Aufn&auml;hen</small></span><div class="ps"><a href="https://www.ebay.de/sch/i.html?_nkw=pailletten+borte+meterware" target="_blank" rel="noopener">eBay</a><a href="https://www.amazon.de/s?k=pailletten+applikation+aufn%C3%A4hen" target="_blank" rel="noopener">Amazon</a></div></td><td class="p">~8 &euro;</td></tr>
+          <tr class="tot"><td>Variante 05 gesamt</td><td class="p">&asymp; 114 &euro;</td></tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- 6 BONUS -->
+  <article class="card c5">
+    <div class="card-top">
+      <div class="num">06</div>
+      <div class="bonus-flag">&iexcl;Bonus!</div>
+      <span class="tag">Profi-Idee</span>
+      <h2>Modulares Reveal-System</h2>
+      <p class="subtitle">Eine Basis &ndash; mehrere Looks f&uuml;r 40 Auftritte</p>
+    </div>
+    <div class="stripe"><span style="background:var(--turquoise)"></span><span style="background:var(--marigold)"></span><span style="background:var(--chili)"></span></div>
+    <div class="body">
+      <div class="row"><div class="ico">&#129649;</div><div><div class="label">Basisschicht</div><p>Eng anliegendes, dunkles Stretch-Outfit &ndash; die eigentliche &bdquo;hebetaugliche&ldquo; Schicht: griffig, verst&auml;rkt, ohne lose Teile.</p></div></div>
+      <div class="row"><div class="ico">&#10024;</div><div><div class="label">Deko-Schicht</div><p>Dar&uuml;ber abnehmbare Elemente: Bolero, Serape-Cape oder Bandolera. F&uuml;r die Hebung blitzschnell ablegen, danach wieder drauf.</p></div></div>
+      <div class="tip"><b>Warum sich das lohnt:</b> Effektvolle Reveals auf der B&uuml;hne, aber f&uuml;r die kritischen Hebefiguren immer das &bdquo;nackte&ldquo;, sichere Outfit.</div>
+      <div class="links">
+        <a href="https://www.pinterest.de/search/pins/?q=quick%20change%20dance%20costume%20reveal" target="_blank" rel="noopener"><span class="dot" style="background:var(--turquoise)"></span>Reveal-Ideen &middot; Pinterest</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BASE LAYER + QUANTITIES -->
+  <section class="basics">
+    <span class="tag">Pflicht &amp; Mengen</span>
+    <h2>Hautfarbenes Schwitz-Unterhemd (Basisschicht)</h2>
+    <p>Unter jedes Oberteil geh&ouml;rt ein <b>hautfarbenes Funktions-/Muskelshirt mit V-Ausschnitt</b>. Der tiefe V bleibt auch bei offenem Hemd unsichtbar, das Shirt f&auml;ngt den Schwei&szlig; ab, bevor er ins eigentliche Kost&uuml;m zieht. So muss das aufw&auml;ndige Show-Teil selten gewaschen werden, w&auml;hrend die g&uuml;nstige Basisschicht oft in die Maschine kann.</p>
+    <p style="margin-top:10px">Material: enges, atmungsaktives Funktionsgewebe (kein dicker Baumwoll-Feinripp). Eng anliegend, damit es unter dem Hemd nicht auftr&auml;gt und beim Heben nicht verrutscht.</p>
+    <div class="qty">
+      <div class="qbox"><div class="big">2&ndash;3&times;</div><div class="what">Hautfarbenes V-Muskelshirt</div><small>pro T&auml;nzer &ndash; zum h&auml;ufigen Waschen, immer ein frisches griffbereit.</small></div>
+      <div class="qbox"><div class="big">2&times;</div><div class="what">Wei&szlig;es Hemd</div><small>pro T&auml;nzer &ndash; Wechsel zwischen den Auftritten, eins immer sauber.</small></div>
+      <div class="qbox"><div class="big">&ge; 1&times;</div><div class="what">Komplette Ersatzgarnitur</div><small>pro T&auml;nzer &ndash; f&uuml;r Risse, Flecken und Sch&auml;den bei 40 Shows.</small></div>
+    </div>
+  </section>
+
+  <!-- VARIANT COMPARISON -->
+  <section class="shop">
+    <span class="tag">Variantenvergleich</span>
+    <h2>Alle Vorschl&auml;ge auf einen Blick</h2>
+    <p class="intro">Summe pro Person aus hochwertigen Einzelteilen, jeweils inkl. der hautfarbenen Schwitz-Unterschicht (2 St&uuml;ck) und der DIY-Deko. Detaillierte Einzelteile, Preise &amp; Shop-Links stehen direkt in jeder Karte oben. Richtpreise Stand Mai 2026.</p>
+    <table class="tbl">
+      <thead><tr><th>Variante</th><th>Charakter</th><th class="r">&asymp; Preis / Person</th></tr></thead>
+      <tbody>
+        <tr><td><span class="item">04 &middot; Serape / Poncho</span></td><td>maximale Farbe</td><td class="r" style="color:var(--marigold);font-weight:800">&asymp; 90 &euro;</td></tr>
+        <tr><td><span class="item">02 &middot; D&iacute;a de los Muertos</span></td><td>elegant, plakativ</td><td class="r" style="color:var(--marigold);font-weight:800">&asymp; 96 &euro;</td></tr>
+        <tr><td><span class="item">03 &middot; Revolution&auml;r / Bandito</span></td><td>markant</td><td class="r" style="color:var(--marigold);font-weight:800">&asymp; 114 &euro;</td></tr>
+        <tr><td><span class="item">05 &middot; Creme-Chino &amp; Hemden</span></td><td>am hebetauglichsten</td><td class="r" style="color:var(--marigold);font-weight:800">&asymp; 114 &euro;</td></tr>
+        <tr><td><span class="item">01 &middot; Mariachi / Charro</span></td><td>der Klassiker</td><td class="r" style="color:var(--marigold);font-weight:800">&asymp; 129 &euro;</td></tr>
+      </tbody>
+    </table>
+    <div class="budget-note">
+      <b>Qualit&auml;t rechnet sich:</b> Hochwertige Einzelteile liegen etwas &uuml;ber dem 100-&euro;-Ziel, halten daf&uuml;r alle 40 Shows <i>und</i> mehrere Saisons &ndash; viel besser als ein 30-&euro;-Set, das nach wenigen Auftritten kaputt ist. So dr&uuml;ckt ihr den Preis: Sammelbestellung mit Mengenrabatt, Hemden &amp; Hosen im Schlussverkauf (C&amp;A/H&amp;M), Hut/Serape einmal kaufen und wiederverwenden, Deko g&uuml;nstig selbst aufn&auml;hen.
+    </div>
+  </section>
+
+  <!-- CLOSER -->
+  <section class="closer">
+    <h2>F&uuml;r alle Varianten gilt</h2>
+    <ul>
+      <li>Stretch-/Funktionsstoffe mit etwas Griffigkeit &ndash; kein glattes Satin an den Greifstellen, sonst rutschen die gehobenen T&auml;nzer.</li>
+      <li>Verst&auml;rkte N&auml;hte an Schultern, Achseln und Schritt &ndash; das sind die Belastungspunkte beim Heben.</li>
+      <li>DIY-Deko (Pailletten, Borten, Applikationen) flach und sicher aufn&auml;hen &ndash; nichts Scharfkantiges an Greifstellen.</li>
+      <li>Mindestens eine komplette Ersatzgarnitur pro T&auml;nzer; alles maschinenwaschbar und farbecht.</li>
+      <li>H&uuml;te, Capes und G&uuml;rtel abnehmbar gestalten &ndash; f&uuml;r die Hebefiguren in Sekunden runter.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fr">&iexcl;Mucha suerte f&uuml;r die Saison!</div>
+  Illustrationen zeigen die Konzepte schematisch &ndash; echte Referenzfotos &ouml;ffnen sich &uuml;ber die &bdquo;Echte Fotos&ldquo;-Links in jeder Karte.
+</footer>
+
+</body>
+</html>
